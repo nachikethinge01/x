@@ -20,7 +20,7 @@ name: function(name) {
                           this.echo("let's talk. what would you like to know about me?\n commands you can use are: [education] [experience] [projects] and more. \n if you want to know the total list. type, [man]"); 
             },
 man: function() {
-        this.echo("possible commands you can try:  \n [experience]: my work experience \n [education]: my education \n [certifications] : my certifications and their links \n [contact]: for my social media \n [volunteer] : my volunteer experience \n [exit] to get out of here. ");
+        this.echo("possible commands you can try:  \n [about]: about me a little \n [experience]: my work experience \n [education]: my education \n [certifications] : my certifications and their links \n [contact]: for my social media \n [volunteer] : my volunteer experience \n [relevant]: my relevant courses taken  \n [exit] to get out of here. ");
 
             }, 
 volunteer: function() {
@@ -47,14 +47,21 @@ sudo: function(){
             },
 
             education: function(){
-                this.echo("I started at Georgia State University CS Emphasis in Data Science (2019-2021) \n  University of Georgia CS Emphasis in DataSci and AI " );
+                this.echo("Georgia State University CS Emphasis in Data Science (2019-2021)"); 
+                this.echo("University of Georgia CS Emphasis in Data Science and AI (2019-2023) " );
             },
             resume: function(){
                 this.echo("you want my resume? right here.");
                 this.echo($('<a href="https://drive.google.com/file/d/1R2CQGaIJj1AujsdS89L1VICM67p1DZz3/view?usp=sharing">resume</a> \n' ));
             },
             about: function(){
-                this.echo("i'm studying cs in atlanta,ga and I'm striving to be a computer scientist working towards Human–Computer Interaction before i take part as a full-time Academic \n I want to be a part of startups and middle-corps so i can actively improve my understanding of the industry. " );
+                this.echo("I'm studying cs in atlanta,ga striving to be a computer scientist. before i take part as a full-time Academic. I want to be a part of startups and middle-corps so i can actively improve my understanding of the industry. " );
+            },
+            ls: function(){
+                this.echo("[resume] \n[education]\n[about]" );
+            },
+            relevant: function(){
+                this.echo("Relevant courses taken include, \n Data Structures \n Systems Level Programming\n Computer Organization" );
             },
             
 
